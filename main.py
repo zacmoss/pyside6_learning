@@ -44,12 +44,24 @@ slider.show()
 app.exec()
 """
 
+""""
 from PySide6.QtWidgets import QApplication
 from rockwidget import RockWidget
 import sys
 
 app = QApplication(sys.argv)
 
-widget = RockWidget()
-widget.show()
+window = RockWidget()
+window.show()
+app.exec()
+"""
+
+from PySide6.QtWidgets import QApplication
+from mainwindow import MainWindow
+import sys
+
+app = QApplication(sys.argv)
+
+window = MainWindow(app)
+window.show()
 app.exec()
