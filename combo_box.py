@@ -6,6 +6,9 @@ class Widget(QWidget):
 
         self.setWindowTitle("QComboBox Demo")
 
+        #Set stylesheet on container widget : Widget
+        #self.setStyleSheet("QPushButton{color:red;background-color:black;}")
+
         self.combo_box = QComboBox(self)
 
         #Add planets to the combobox
